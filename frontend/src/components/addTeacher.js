@@ -18,7 +18,7 @@ export default function AddTeacher() {
             gender
         }
 
-        axios.post("http://localhost:8070/Teacher/add", newTeacher).then(()=>{
+        axios.post("http://localhost:8070/teacher/add", newTeacher).then(()=>{
 
             alert("Teacher Added");
             navigate('/');

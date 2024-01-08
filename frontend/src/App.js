@@ -1,11 +1,15 @@
 
 import './App.css';
 import AddStudent from './components/AddStudent';
-import AllStudent from './components/AllStudent';
+
 import Header from './components/Header';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import UpdateStudent from './components/UpdateStudent';
 import DeleteStudent from './components/DeleteStudent';
+import AllTeacher from './components/AllTeacher';
+import AllStudent from './components/AllStudent';
+import addTeacher from './components/addTeacher';
+import DeleteTeacher from './components/addTeacher';
 
 function App() {
   return (
@@ -21,7 +25,7 @@ function App() {
           <Route path='/' exact Component={AllStudent}/>
 
           <Route path='/' exact Component={addTeacher}/>
-          <Route path='/update/:id' exact Component={updateTeacher}/>
+          <Route path='/update/:id' exact Component={}/>
           <Route path='/delete/:id' exact Component={DeleteTeacher}/>
           <Route path='/' exact Component={AllTeacher}/>
         </Routes>
