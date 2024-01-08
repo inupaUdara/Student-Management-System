@@ -1,6 +1,5 @@
 const router=require("express").Router();
 const{ response } = require("express");
-const Teacher = require("../models/Teacher");
 let Teacher = require ("../models/Teacher");
 
 router.post("/login",async(req,res)=>{
@@ -76,4 +75,4 @@ router.route("/delete/:id").delete(async(req,res)=>{
     })
 })
 
-modeule.exports=router;
+module.exports=router;

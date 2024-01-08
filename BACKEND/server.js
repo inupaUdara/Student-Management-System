@@ -26,9 +26,16 @@ connection.once("open",() => {
     console.log("Mongodb connection successfull!");
 })
 
-// const studentRouter=require("./routes/students.js");
 
-app.use("/student",studentRouter);
+const StudentRouter=require("./routes/students.js");
+
+app.use("/student",StudentRouter);
+
+const TeacherRouter=require("./routes/TeacherRoute.js");
+app.use("/teacher",TeacherRouter);
+
+const AdminRouter=require("./routes/admins.js");
+app.use("./admin",AdminRouter);
 
 app.listen(PORT, () =>{
     console.log(`Server is up and running on port number: ${PORT}`);

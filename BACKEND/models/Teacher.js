@@ -14,7 +14,7 @@ const TeacherSchema = new Schema({
     },
 
     gender:{
-        type:string,
+        type:String,
         required:true
     },
     username:{
