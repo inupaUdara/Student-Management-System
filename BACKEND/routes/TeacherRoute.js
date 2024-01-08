@@ -3,6 +3,24 @@ const{ response } = require("express");
 const Teacher = require("../models/Teacher");
 let Teacher = require ("../models/Teacher");
 
+router.post("/login",async(req,res)=>{
+    const{username,password}=req.body;
+
+    try{
+        const check=await Teacher.findOne({username:username,password:password})
+
+        if(check){
+            res.json("exist")
+        }
+        else{
+            res.json("not exist")
+        }
+    }
+    catch(e){
+        res.json("notexist")
+    }
+})
+
 router.route("/add").post((req,res)=>{
     const name = req.body.name;
     const age = Number(req.body.age);
