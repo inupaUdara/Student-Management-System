@@ -18,12 +18,12 @@ export default function AddTeacher() {
             gender
         }
 
-<<<<<<<< HEAD:frontend/src/TeacherComponents/addTeacher.js
+// <<<<<<<< HEAD:frontend/src/TeacherComponents/addTeacher.js
 
         axios.post("http://localhost:8070/Teacher/add", newTeacher).then(()=>{
-========
-        axios.post("http://localhost:8070/teacher/add", newTeacher).then(()=>{
->>>>>>>> d1a69de5a9e2740275d8454528eb50076731b264:frontend/src/components/addTeacher.js
+// ========
+//         axios.post("http://localhost:8070/teacher/add", newTeacher).then(()=>{
+// >>>>>>>> d1a69de5a9e2740275d8454528eb50076731b264:frontend/src/components/addTeacher.js
 
             alert("Teacher Added");
             navigate('/teachers');
@@ -41,7 +41,7 @@ export default function AddTeacher() {
             <form onSubmit={sentData}>
                 <div class = "mb-4">
                     <label for="name" class="from-label">Teacher Name</label>
-                    <input type = "text" class = "from-control" id="name" placeholder="Enter Student Name"
+                    <input type = "text" class = "from-control" id="name" placeholder="Enter Teacher Name"
                     onChange={(e)=>{
                         setName(e.target.value);
                     
@@ -51,7 +51,7 @@ export default function AddTeacher() {
     <div class="mb-4">
 
         <label for="age" class="form-label">Teacher Age</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter Student Age"
+        <input type="text" class="form-control" id="name" placeholder="Enter Teacher Age"
         onChange={(e)=>{
             setAge(e.target.value);
         }}/>
@@ -60,7 +60,7 @@ export default function AddTeacher() {
     </div>
     <div class="mb-4">
         <label for="gender" class="form-label">Teacher Gender</label>
-        <input type = "text" class= "form-control" id = "gender" placeholder="Enter Students Gender"
+        <input type = "text" class= "form-control" id = "gender" placeholder="Enter Teacher Gender"
 
         onChange={(e)=>{
             setGender(e.target.value);
