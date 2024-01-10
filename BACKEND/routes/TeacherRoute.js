@@ -57,5 +57,4 @@ router.route("/delete/:id").delete(async(req,res)=>{
         res.status(200).send({status: "Error with get user", eroor: err.message})
     })
 })
-
-modeule.exports=router;
+module.exports=router;
