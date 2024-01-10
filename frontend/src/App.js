@@ -28,7 +28,7 @@ function App() {
           <Route path='/' exact Component={addTeacher}/>
           <Route path='/update/:id' exact Component={UpdateTeacher}/>
           <Route path='/delete/:id' exact Component={DeleteTeacher}/>
-          <Route path='/' exact Component={AllTeacher}/>
+          <Route path='/teachers' exact Component={AllTeacher}/>
         </Routes>
         
          

@@ -21,7 +21,7 @@ export default function AddTeacher() {
         axios.post("http://localhost:8070/teacher/add", newTeacher).then(()=>{
 
             alert("Teacher Added");
-            navigate('/');
+            navigate('/teachers');
 
         }).catch((err)=>{
             alert(err);
