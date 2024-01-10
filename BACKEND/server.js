@@ -32,7 +32,7 @@ const StudentRouter=require("./routes/students.js");
 app.use("/student",StudentRouter);
 
 const TeacherRouter=require("./routes/TeacherRoute.js");
-app.use("/teacher",TeacherRouter);
+app.use("/Teacher",TeacherRouter);
 
 const AdminRouter=require("./routes/admins.js");
 app.use("/admin",AdminRouter);
