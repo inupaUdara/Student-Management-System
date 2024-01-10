@@ -24,9 +24,13 @@ function App() {
           <Route path='/delete/:id' exact Component={DeleteStudent}/>
           <Route path='/' exact Component={AllStudent}/> */}
 
+          <Route path='/add' exact Component={addTeacher}/>
+          <Route path='/update/:id' exact Component={updateTeacher}/>
+          <Route path='/delete/:id' exact Component={DeleteTeacher}/>
           <Route path='/teachers' exact Component={AddTeacher}/>
           <Route path='/update/:id' exact Component={UpdateTeacher}/>
           <Route path='/delete/:id' exact Component={deleteTeacher}/>
+
           <Route path='/' exact Component={AllTeacher}/>
         </Routes>
         
