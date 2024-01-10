@@ -71,7 +71,7 @@ router.route("/delete/:id").delete(async(req,res)=>{
     let userId = req.params.id;
 
     await Teacher.findByIdAndDelete(userId).then((Teacher)=>{
-        res.status(200).send({status: "Error with get user", eroor: err.message})
+        res.status(200).send({status: "Error with get user", error: err.message})
     })
 })
 
