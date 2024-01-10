@@ -1,7 +1,24 @@
 const router=require("express").Router();
 const{ response } = require("express");
-const Teacher = require("../models/Teacher");
 let Teacher = require ("../models/Teacher");
+
+router.post("/login",async(req,res)=>{
+    const{username,password}=req.body;
+
+    try{
+        const check=await Teacher.findOne({username:username,password:password})
+
+        if(check){
+            res.json("exist")
+        }
+        else{
+            res.json("not exist")
+        }
+    }
+    catch(e){
+        res.json("notexist")
+    }
+})
 
 router.route("/add").post((req,res)=>{
     const name = req.body.name;
@@ -57,4 +74,8 @@ router.route("/delete/:id").delete(async(req,res)=>{
         res.status(200).send({status: "Error with get user", eroor: err.message})
     })
 })
+<<<<<<< HEAD
+=======
+
+>>>>>>> d1a69de5a9e2740275d8454528eb50076731b264
 module.exports=router;

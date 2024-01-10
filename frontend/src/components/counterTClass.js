@@ -1,9 +1,10 @@
 import React from "react";
 
-class CounterClass extends React.Component{
+class counterTClass extends React.Component{
+
     constructor(){
         super();
-        this.increment=this.increment.bind(this)
+        this.increment=this.increment.bind(this);
         this.state={
             number: 0
         }
@@ -11,7 +12,7 @@ class CounterClass extends React.Component{
 
     increment(){
         this.setState({
-            number: this.state.number+1
+            number:this.state.number+1
         })
     }
 
@@ -22,9 +23,7 @@ class CounterClass extends React.Component{
                 <button onClick={this.increment}>Increment</button>
             </div>
         )
-            
-        
     }
 }
 
-export default CounterClass;
+export default counterTClass;

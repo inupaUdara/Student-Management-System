@@ -14,9 +14,18 @@ const TeacherSchema = new Schema({
     },
 
     gender:{
-        type:string,
+        type:String,
         required:true
-    }
+    },
+    // username:{
+    //     type:String,
+    //     required:true
+    // },
+
+    // password: {
+    //     type:String,
+    //     required:true
+    // }
 })
 
 const Teacher = mongoose.model("Teacher",TeacherSchema);

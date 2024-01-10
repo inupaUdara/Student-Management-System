@@ -1,21 +1,21 @@
 import React, {useState} from "react";
 
-function CounterFunction() {
+function counterTFunction(){
 
-    let [number, setNumber]=useState(0)
+    let [number, setNumber] = useState(0)
 
-    function increment() {
+    function increment(){
+
         setNumber(++number)
     }
 
     return(
         <div>
-            <h3>Functional Component</h3>
+            <h3>function Component</h3>
             <h1>Counter = {number}</h1>
             <button onClick={e => increment()}>Increment</button>
         </div>
     )
-    
 }
 
-export default CounterFunction;
+export default counterTFunction;
