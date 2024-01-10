@@ -35,7 +35,7 @@ const TeacherRouter=require("./routes/TeacherRoute.js");
 app.use("/teacher",TeacherRouter);
 
 const AdminRouter=require("./routes/admins.js");
-app.use("./admin",AdminRouter);
+app.use("/admin",AdminRouter);
 
 app.listen(PORT, () =>{
     console.log(`Server is up and running on port number: ${PORT}`);

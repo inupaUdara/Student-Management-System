@@ -1,23 +1,23 @@
 import React, {useState, useEffect } from "react";
 import axios from "axios";
-export default function AllTeacher(params) {
+export default function AllTeacher() {
 
-    const [students,setStudents] = useState([]);
+    // const [teachers,setTeachers] = useState([]);
+    const [teachers,setTeachers] = useState([]);
 
     useEffect(()=>{
-
         function getTeachers(){
-            axios.get("http://localhost:8070/student/").then((res)=>{
-                setStudents(res.data);
+            axios.get("http://localhost:8070/teacher/").then((res)=>{
+                setTeachers(res.data);
             }).catch((err)=>{
                 alert(err.message);
             })
         }
-        getStudents();
+        getTeachers();
 
     }, [])
 
-return }
+return (
 
 <div className = "container">
     <table class ="table">
@@ -30,17 +30,19 @@ return }
             </tr>
         </thead>
         <tbody>
-            {Teachers && Teachers.map((Teachers)=> (
-                <tr key = {students.id} >
+            {teachers && teachers.map((Teachers)=> (
+                <tr key = {Teachers.id} >
                     
                     <td>{Teachers.name}</td>
                     <td>{Teachers.age}</td>
                     <td>{Teachers.gender}</td>
-                    <a className="btn btn-primary" href={`/update/${students._id}`} role="button">update</a>
-                    <a className="btn btn-primary" href={`/delete/${students._id}`} role="button">delete</a>
+                    <a className="btn btn-primary" href={`/update/${Teachers._id}`} role="button">update</a>
+                    <a className="btn btn-primary" href={`/delete/${Teachers._id}`} role="button">delete</a>
                 </tr>
             )
             )}
         </tbody>
     </table>
 </div>
+)
+}
