@@ -17,15 +17,15 @@ const TeacherSchema = new Schema({
         type:String,
         required:true
     },
-    username:{
-        type:String,
-        required:true
-    },
+    // username:{
+    //     type:String,
+    //     required:true
+    // },
 
-    password: {
-        type:String,
-        required:true
-    }
+    // password: {
+    //     type:String,
+    //     required:true
+    // }
 })
 
 const Teacher = mongoose.model("Teacher",TeacherSchema);
