@@ -24,15 +24,13 @@ function App() {
           <Route path='/delete/:id' exact Component={DeleteStudent}/>
           <Route path='/' exact Component={AllStudent}/> */}
 
-<<<<<<< HEAD
           <Route path='/add' exact Component={addTeacher}/>
           <Route path='/update/:id' exact Component={updateTeacher}/>
           <Route path='/delete/:id' exact Component={DeleteTeacher}/>
-=======
           <Route path='/teachers' exact Component={AddTeacher}/>
           <Route path='/update/:id' exact Component={UpdateTeacher}/>
           <Route path='/delete/:id' exact Component={deleteTeacher}/>
->>>>>>> d1a69de5a9e2740275d8454528eb50076731b264
+
           <Route path='/' exact Component={AllTeacher}/>
         </Routes>
         
