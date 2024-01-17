@@ -2,9 +2,9 @@
 This website is developed by using MERN(MongoDB, Express, React, Node).
 
 ## List of implemented features
-*Login user for Teacher, Admin
-*Admin create user accounts of teachers (CRUD Services)
-*Teacher add and manage students.
+1.Login user for Teacher, Admin
+2.Admin create user accounts of teachers (CRUD Services)
+3.Teacher add and manage students.
 
 
 ## Installation Steps:
